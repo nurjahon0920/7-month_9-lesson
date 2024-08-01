@@ -1,0 +1,29 @@
+.container2 {
+  display: flex;
+}
+
+.content {
+  top: 100px;
+  left: 400px;
+  position: absolute;
+  flex-direction: column;
+  font-size: 22px;
+  gap: 15px;
+  display: flex;
+}
+
+.search-add {
+  display: flex;
+  gap: 10px;
+}
+
+.Table {
+  width: 100%;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-top: 15px;
+}

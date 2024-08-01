@@ -1,0 +1,16 @@
+a {
+  color: #212121;
+  text-decoration: none;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Inter, sans-serif;
+}
+.active {
+  div {
+    background-color: #11263a !important;
+  }
+}
