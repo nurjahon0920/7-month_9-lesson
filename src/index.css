@@ -1,0 +1,40 @@
+.loader {
+  width: 50px;
+  aspect-ratio: 1;
+  margin: 50px auto;
+  border-radius: 50%;
+  border: 8px solid #aaa;
+  border-right-color: #333;
+  animation: l2 0.8s infinite linear;
+}
+/* .loader {
+  margin: 50px auto;
+  width: 50px;
+  aspect-ratio: 1;
+  display: grid;
+  animation: l14 4s infinite;
+}
+.loader::before,
+.loader::after {
+  content: "";
+  grid-area: 1/1;
+  border: 8px solid;
+  border-radius: 50%;
+  border-color: red red #0000 #0000;
+  mix-blend-mode: darken;
+  animation: l14 1s infinite linear;
+}
+.loader::after {
+  border-color: #0000 #0000 blue blue;
+  animation-direction: reverse;
+}
+@keyframes l14 {
+  100% {
+    transform: rotate(1turn);
+  }
+} */
+@keyframes l2 {
+  to {
+    transform: rotate(1turn);
+  }
+}
