@@ -7,6 +7,27 @@
   border-right-color: #333;
   animation: l2 0.8s infinite linear;
 }
+.dark_mode {
+  background-color: #111;
+}
+.enclosingTable {
+  padding-top: 30px !important;
+}
+.dark_mode .table * {
+  background-color: #222;
+  font-weight: 600;
+  color: #fff;
+}
+.dark_mode_button {
+  text-align: right;
+  right: -1200px;
+  top: 15px;
+  position: relative;
+  /* margin: 10px 300px; */
+}
+.img {
+  animation: l2 2s infinite linear;
+}
 /* .loader {
   margin: 50px auto;
   width: 50px;
