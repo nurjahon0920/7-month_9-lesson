@@ -5,19 +5,26 @@ import "./index.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Table } from "react-bootstrap";
 import Dark from "./components/Dark";
+import { Button } from "@mui/material";
+import { Input } from "antd";
 
 const Todo = () => {
   const dispatch = useDispatch();
   const { isLoading, data, error } = useSelector((state) => state.todo);
   useEffect(() => {
     dispatch(fetchTodo());
-    alert("Loading qo'shilgan");
   }, [dispatch]);
 
   console.log(data);
   return (
     <div>
-      <Dark />
+      <div className="todo_top">
+        <Input.Search placeholder="Searching ..." />
+        <Button variant="contained" color="primary" className="addTodo">
+          Add
+        </Button>
+        <Dark />
+      </div>
       <div className="enclosingTable">
         <Table striped bordered hover className="table">
           <thead>
@@ -25,6 +32,7 @@ const Todo = () => {
               <th>#</th>
               <th>Title</th>
               <th>Completed</th>
+              <th>Actions</th>
             </tr>
           </thead>
           <tbody>
@@ -40,6 +48,17 @@ const Todo = () => {
                       <td>{todo.id}</td>
                       <td>{todo.title}</td>
                       <td>{todo.completed ? "✅" : "❌"}</td>
+                      <td className="actions">
+                        <Button
+                          variant="contained"
+                          color="success"
+                          className="">
+                          Edit
+                        </Button>
+                        <Button variant="contained" color="error" className="">
+                          Delete
+                        </Button>
+                      </td>
                     </tr>
                   </>
                 );

@@ -1,12 +1,3 @@
-.loader {
-  width: 50px;
-  aspect-ratio: 1;
-  margin: 50px auto;
-  border-radius: 50%;
-  border: 8px solid #aaa;
-  border-right-color: #333;
-  animation: l2 0.8s infinite linear;
-}
 .dark_mode {
   background-color: #111;
 }
@@ -18,44 +9,40 @@
   font-weight: 600;
   color: #fff;
 }
-.dark_mode_button {
-  text-align: right;
-  right: -1200px;
-  top: 15px;
-  position: relative;
-  /* margin: 10px 300px; */
+.todo_top {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+  gap: 20px;
+  justify-content: space-between;
+}
+.actions {
+  display: flex;
+  text-align: center;
+  justify-content: space-evenly;
+  /* gap: 10px; */
+}
+.addTodo {
+  background-color: #4caf50 !important;
+  color: #fff;
+  border: none;
+  padding: 5px 20px !important;
 }
 .img {
   animation: l2 2s infinite linear;
 }
-/* .loader {
-  margin: 50px auto;
+/* HTML: <div class="loader"></div> */
+.loader {
+  margin: 50px 300px;
   width: 50px;
   aspect-ratio: 1;
-  display: grid;
-  animation: l14 4s infinite;
+  --_c: no-repeat radial-gradient(farthest-side, #25b09b 92%, #0000);
+  background: var(--_c) top, var(--_c) left, var(--_c) right, var(--_c) bottom;
+  background-size: 12px 12px;
+  animation: l7 1s infinite;
 }
-.loader::before,
-.loader::after {
-  content: "";
-  grid-area: 1/1;
-  border: 8px solid;
-  border-radius: 50%;
-  border-color: red red #0000 #0000;
-  mix-blend-mode: darken;
-  animation: l14 1s infinite linear;
-}
-.loader::after {
-  border-color: #0000 #0000 blue blue;
-  animation-direction: reverse;
-}
-@keyframes l14 {
-  100% {
-    transform: rotate(1turn);
-  }
-} */
-@keyframes l2 {
+@keyframes l7 {
   to {
-    transform: rotate(1turn);
+    transform: rotate(0.5turn);
   }
 }
