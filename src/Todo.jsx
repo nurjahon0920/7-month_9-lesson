@@ -6,7 +6,7 @@ import {
   addTodo,
   updateTodo,
   toggleCompleted,
-} from "../app/Todo/TodoSlice";
+} from "./app/Todo/TodoSlice";
 import { Box, Button, Modal, TextField } from "@mui/material";
 
 const style = {
